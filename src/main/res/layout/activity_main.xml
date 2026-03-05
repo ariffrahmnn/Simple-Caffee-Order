@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF3D1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D'Caffee                                   ☕"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#B7771E"
+            android:padding="15dp"/>
+
+        <!-- Coffee Type -->
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Coffee Type"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/border_radius"
+            android:padding="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgCoffeeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbRobusta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffeeBrown"
+                android:buttonTint = "@color/coffeeBrown"
+                android:text="Robusta"/>
+
+            <RadioButton
+                android:id="@+id/rbEspresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffeeBrown"
+                android:buttonTint = "@color/coffeeBrown"
+                android:text="Espresso"/>
+
+            <RadioButton
+                android:id="@+id/rbLuwak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffeeBrown"
+                android:buttonTint = "@color/coffeeBrown"
+                android:text="Luwak Coffee"/>
+
+        </RadioGroup>
+
+        <!-- Mix Type -->
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Mix Type"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/border_radius"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coffeeBrown"
+            android:buttonTint = "@color/coffeeBrown"
+            android:text="Cream"/>
+
+        <CheckBox
+            android:id="@+id/cbSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coffeeBrown"
+            android:buttonTint = "@color/coffeeBrown"
+            android:text="Sugar"/>
+
+        <!-- Added Menu -->
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Added Menu"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/border_radius"
+            android:padding="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbFriedRice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffeeBrown"
+                android:buttonTint = "@color/coffeeBrown"
+                android:text="Fried Rice"/>
+
+            <RadioButton
+                android:id="@+id/rbFriedNoodle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffeeBrown"
+                android:buttonTint = "@color/coffeeBrown"
+                android:text="Fried Noodle"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="100dp">
+
+        <!-- Button Bayar -->
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Price"
+                    android:backgroundTint="#4CBB17"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="20dp" />
+
+        <!-- Total Harga -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textColor="@color/coffeeBrown"
+                    android:fontFamily="sans-serif-thin"
+                    android:textFontWeight="700"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. "
+                    android:textColor="@color/coffeeBrown"
+                    android:textSize="20sp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
